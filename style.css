@@ -1,0 +1,71 @@
+:root,body,html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+:root{
+    --grey: rgba(0, 0, 0, 0.5);
+}
+
+.side-panel{
+    max-width: 40vw;
+    height: 100vh;
+    background-image: url(./images/Leaf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+img{
+    width: 8vw;
+    padding: 3em 0;
+}
+
+.img{
+       display: flex;
+    background-color: var(--grey);
+    position: absolute;
+    top: 25vh;
+    width: 40vw;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+.on{
+    font-family: 'Norse-Bold', sans-serif;
+    text-align: center;
+    font-size: 10rem;
+    margin: 0;
+    color: white;
+    align-self: center;
+}
+ @font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+ }
+
+ .bod{
+ width: 100%;
+ position: absolute;
+ left: 40vw;
+ border: pink solid;
+ height: 100%;
+ }
+
+ body{
+    flex-direction: column;
+    display: flex;
+    position: relative;
+ }
+p{
+    font-weight: bold;
+    /* font-family: SANS-SERIF; */
+    top: 12vh;
+    width: 42vw;
+    left: 4vw;
+    font-size: 2rem;
+    position: absolute;
+ }
