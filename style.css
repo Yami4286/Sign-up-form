@@ -4,11 +4,19 @@
     margin: 0;
     height: 100%;
     font-size: 62.5%;
+   
 }
+
+
+
+
 
 :root{
     --grey: rgba(0, 0, 0, 0.5);
+    --font:clamp(1rem,1.5vw,2.5rem);
+    --top:clamp(12vh,1.5vh,22vh);
 }
+
 
 .side-panel{
     max-width: 40vw;
@@ -20,15 +28,15 @@
 }
 
 img{
-    width: 8vw;
-    padding: 3em 0;
+    width: 6vw;
+    padding: 2em 0;
 }
 
 .img{
        display: flex;
     background-color: var(--grey);
     position: absolute;
-    top: 25vh;
+    top: 22vh;
     width: 40vw;
     align-content: flex-end;
     justify-content: center;
@@ -37,7 +45,7 @@ img{
 .on{
     font-family: 'Norse-Bold', sans-serif;
     text-align: center;
-    font-size: 10rem;
+    font-size: 8rem;
     margin: 0;
     color: white;
     align-self: center;
@@ -48,10 +56,12 @@ img{
  }
 
  .bod{
- width: 100%;
+    display: flex;
+    flex-direction: column;
+ width:60%;
  position: absolute;
  left: 40vw;
- border: pink solid;
+
  height: 100%;
  }
 
@@ -59,13 +69,55 @@ img{
     flex-direction: column;
     display: flex;
     position: relative;
+    flex-wrap: nowrap;
  }
-p{
+
+
+
+.header {
+    left: 2%;
+    top: 12%;
+    font-size: var(--font);
+    display: flex;
+    gap: 0.7em;
+    flex-direction: column;
+}
+.first{
+    font-size: var(--font);
+     font-weight: bold;
+    font-family: sans-serif;
+}
+
+.sec{
     font-weight: bold;
-    /* font-family: SANS-SERIF; */
-    top: 12vh;
-    width: 42vw;
-    left: 4vw;
-    font-size: 2rem;
-    position: absolute;
+    font-family: sans-serif;
+    max-width:760px;
+    min-width: 305px;
+}
+.Ins{
+    display: flex;
+
+}
+
+ form{
+    padding: 5px;
+    font-size: var(--font);
  }
+
+.star{
+    padding: 24px 1.3em;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    border: none;
+}
+.main{
+    flex: 1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+input{
+    width: 200px;
+}
